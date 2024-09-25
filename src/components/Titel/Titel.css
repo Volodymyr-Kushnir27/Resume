@@ -1,0 +1,104 @@
+.title {
+  display: grid;
+  grid-template-rows: repeat(
+    2,
+    1fr
+  ); /* Створюємо дві колонки однакової ширини */
+  gap: 20px; /* Відступ між колонками */
+  align-items: center; /* Вертикальне вирівнювання по центру */
+  height: 100vh; /* Висота контейнера дорівнює висоті вікна */
+  background-color: #707a8a;
+  max-width: 100%;
+  max-height: 100%;
+}
+  
+.h1-title {
+  color: white;
+  letter-spacing: 15px;
+  position: relative;
+  width: 400px;
+  margin: 100px 250px 0px;
+  font-weight: bold;
+  font-size: 70px;
+}
+
+.h2-title {
+  width: 500px;
+  color: rgb(248, 250, 252);
+  letter-spacing: 10px;
+  margin-left: 250px;
+  margin-top: -100px;
+  user-select: none;
+}
+
+h1::first-letter {
+  left: 0;
+  color: #00d647;
+}
+
+h1::last-letter {
+  color: #00d647;
+}
+.img{
+  right: 100px;
+}
+.photo1 {
+  pointer-events: none;
+  position: absolute;
+  margin-left: 800px;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  max-width: 40%;
+  max-height: 100%;
+  object-fit: cover; 
+  display: block ;
+}
+
+
+.download {
+  display: flex;
+  
+}
+
+
+
+@media (max-width: 800px) {
+  .title {
+    grid-template-columns: 1fr; /* Змінюємо макет на одну колонку */
+    width: 90%;
+  }
+
+  .photo1{
+    visibility: none ;
+    display: none;
+  }
+
+
+  h1, h2 {
+    width: 90%; /* Займаємо 90% ширини контейнера */
+  }
+}
+@media (max-width: 1100px) {
+  .photo1{
+    display: none;
+  }
+  .title{
+    grid-template-columns: 1fr;
+    gap: 20px; /* Відступ між колонками */
+    height: 100vh; 
+    
+  }
+  h1{
+    width: 90%; /* Займаємо 90% ширини контейнера */
+    grid-template-columns: 1fr; 
+   
+}
+
+  .btn{
+    width: 100px;
+    height: 50px;
+    font-size: 10px;
+  }
+
+  }
