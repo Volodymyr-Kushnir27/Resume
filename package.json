@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://Volodymyr-Kushnir27.github.io/Resume",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
